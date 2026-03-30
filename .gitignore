@@ -1,0 +1,29 @@
+# Portable binaries — too large for git, download separately
+node-v22.21.1-win-x64/
+pgsql/
+
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment files — contain secrets, never commit
+backend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Build output
+frontend/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Claude Code memory (local only)
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
